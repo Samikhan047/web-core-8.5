@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS - Computer Peripheral Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- Overlay -->
+    <div class="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-btn" onclick="toggleSidebar()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="sidebar-logo">CPS</div>
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">Equipment repair</a>
+            <a href="#" class="nav-item section-title">Services and solutions</a>
+            <a href="#" class="nav-item">Corporate clients</a>
+            <a href="#" class="nav-item">Equipment sellers</a>
+            <a href="#" class="nav-item">Partners</a>
+            <a href="#" class="nav-item">Manufacturers</a>
+            <a href="#" class="nav-item">Our service centres</a>
+            <a href="#" class="nav-item">Contacts</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="contact-actions">
+                <button class="contact-btn"><i class="fas fa-phone-alt"></i></button>
+                <button class="contact-btn"><i class="fas fa-comment-dots"></i></button>
+                <button class="contact-btn"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="contact-info">
+                <div class="contact-email">mail@cps.com</div>
+                <div class="contact-phone">8 800 890 8900</div>
+            </div>
+            <div class="language-switcher">
+                <a href="#" class="lang-btn">RU</a>
+                <a href="#" class="lang-btn active">EN</a>
+                <a href="#" class="lang-btn">CH</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner">
+                <div class="header-left">
+                    <button class="menu-trigger" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo">CPS</div>
+                </div>
+
+                <div class="header-center">
+                    <div class="title-indicator"></div>
+                    <h1 class="page-title">Services and support</h1>
+                </div>
+
+                <div class="header-actions">
+                    <button class="action-btn primary">
+                        <i class="fas fa-tools"></i>
+                        <span>Submit a request</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>Repair status</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tabs-container">
+                <button class="tab active">Brands we repair</button>
+                <button class="tab">Devices we repair</button>
+                <button class="tab">Service prices</button>
+                <button class="tab">Addresses of service centres</button>
+                <button class="tab">Special prices</button>
+                <button class="tab">Reviews</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2>Services and support</h2>
+                    <div class="hero-text">
+                        <p>We are an authorised service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer's warranty.</p>
+                        <p>We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of loyal customers. We take pride in the fact that clients come to us through recommendations and, in turn, recommend us to their family and friends.</p>
+                        <a href="#" class="read-more">
+                            Read more <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="CPS Service Center">
+                    <div class="cps-badge">CPS</div>
+                </div>
+            </section>
+
+            <!-- Brands Section -->
+            <section class="brands-section">
+    <div class="section-header">
+        <div class="section-label">Repair of equipment from various brands</div>
+    </div>
+
+    <div class="swiper brands-swiper">
+        <div class="brands-grid swiper-wrapper" id="brandsGrid">
+            <div class="brand-card swiper-slide"><span class="brand-name lenovo">Lenovo</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name samsung">SAMSUNG</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name apple"><i class="fab fa-apple"></i></span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name viewsonic">ViewSonic</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name bosch"><i class="fas fa-circle-notch"></i> BOSCH</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name hp">hp</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name acer">acer</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide"><span class="brand-name sony">SONY</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide extra-item"><span class="brand-name lenovo">Lenovo</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="brand-card swiper-slide extra-item"><span class="brand-name samsung">SAMSUNG</span><span class="brand-arrow"><i class="fas fa-chevron-right"></i></span></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <button class="toggle-btn" id="brandsToggle" onclick="toggleBrands()">
+        <i class="fas fa-chevron-down"></i>
+        <span>Show all</span>
+    </button>
+</section>
+<!---Equipment section-->
+<section class="equipment-section">
+    <div class="section-header">
+        <div class="section-label">Repair of various types of equipment</div>
+    </div>
+
+    <div class="swiper equipment-swiper">
+        <div class="equipment-grid swiper-wrapper" id="equipmentGrid">
+            <div class="equipment-card swiper-slide"><span class="equipment-name">Laptop repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="equipment-card swiper-slide"><span class="equipment-name">Tablet repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="equipment-card swiper-slide"><span class="equipment-name">PC repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="equipment-card swiper-slide"><span class="equipment-name">Monitor repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="equipment-card swiper-slide extra-item"><span class="equipment-name">Phone repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+            <div class="equipment-card swiper-slide extra-item"><span class="equipment-name">Printer repair</span><span class="equipment-arrow"><i class="fas fa-chevron-right"></i></span></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <button class="toggle-btn" id="equipmentToggle" onclick="toggleEquipment()">
+        <i class="fas fa-chevron-down"></i>
+        <span>Show all</span>
+    </button>
+</section>
+
+            <!-- Pricing Section -->
+            <section class="pricing-section">
+                <div class="section-header" style="margin-bottom: 24px;">
+                    <div class="section-label">Service prices</div>
+                </div>
+
+                <!-- Desktop/Tablet Table -->
+                <div class="pricing-header">
+                    <div class="pricing-header-item">Repair services</div>
+                    <div class="pricing-header-item">Price</div>
+                    <div class="pricing-header-item">Deadline</div>
+                    <div></div>
+                </div>
+
+                <div class="pricing-row">
+                    <div class="service-name">Diagnostics</div>
+                    <div class="service-price">Free of charge</div>
+                    <div class="service-deadline">30 min</div>
+                    <button class="order-btn">Order <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="pricing-row">
+                    <div class="service-name">Display replacement</div>
+                    <div class="service-price">1,000 ₽</div>
+                    <div class="service-deadline">30-120 min</div>
+                    <button class="order-btn">Order <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="pricing-row">
+                    <div class="service-name">Polyphonic speaker replacement</div>
+                    <div class="service-price">1,000 ₽</div>
+                    <div class="service-deadline">30-120 min</div>
+                    <button class="order-btn">Order <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="pricing-row">
+                    <div class="service-name">Testing with a technical report</div>
+                    <div class="service-price">1,000 ₽</div>
+                    <div class="service-deadline">30-120 min</div>
+                    <button class="order-btn">Order <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="pricing-row">
+                    <div class="service-name">Software replacement</div>
+                    <div class="service-price">1,000 ₽</div>
+                    <div class="service-deadline">30-120 min</div>
+                    <button class="order-btn">Order <i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Mobile Cards -->
+                <div class="mobile-pricing">
+                    <div class="mobile-price-card">
+                        <div class="mobile-price-header">
+                            <span class="mobile-service-name">Diagnostics</span>
+                            <span class="mobile-service-price">Free</span>
+                        </div>
+                        <div class="mobile-service-meta">
+                            <span class="mobile-service-deadline">30 min</span>
+                        </div>
+                        <button class="mobile-order-btn">Order</button>
+                    </div>
+                    <div class="mobile-price-card">
+                        <div class="mobile-price-header">
+                            <span class="mobile-service-name">Display replacement</span>
+                            <span class="mobile-service-price">1,000 ₽</span>
+                        </div>
+                        <div class="mobile-service-meta">
+                            <span class="mobile-service-deadline">30-120 min</span>
+                        </div>
+                        <button class="mobile-order-btn">Order</button>
+                    </div>
+                    <div class="mobile-price-card">
+                        <div class="mobile-price-header">
+                            <span class="mobile-service-name">Polyphonic speaker replacement</span>
+                            <span class="mobile-service-price">1,000 ₽</span>
+                        </div>
+                        <div class="mobile-service-meta">
+                            <span class="mobile-service-deadline">30-120 min</span>
+                        </div>
+                        <button class="mobile-order-btn">Order</button>
+                    </div>
+                    <div class="mobile-price-card">
+                        <div class="mobile-price-header">
+                            <span class="mobile-service-name">Testing with a technical report</span>
+                            <span class="mobile-service-price">1,000 ₽</span>
+                        </div>
+                        <div class="mobile-service-meta">
+                            <span class="mobile-service-deadline">30-120 min</span>
+                        </div>
+                        <button class="mobile-order-btn">Order</button>
+                    </div>
+                    <div class="mobile-price-card">
+                        <div class="mobile-price-header">
+                            <span class="mobile-service-name">Software replacement</span>
+                            <span class="mobile-service-price">1,000 ₽</span>
+                        </div>
+                        <div class="mobile-service-meta">
+                            <span class="mobile-service-deadline">30-120 min</span>
+                        </div>
+                        <button class="mobile-order-btn">Order</button>
+                    </div>
+                </div>
+
+                <div class="pricing-info">
+                    <p class="pricing-info-text">
+                        All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial proposal for ongoing maintenance, please submit a request.
+                    </p>
+                    <a href="#" class="commercial-link">
+                        Get a commercial proposal <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p>© 2019 CPS</p>
+                <p>Developed by the Apepsong team</p>
+            </div>
+            <div class="footer-center">
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-right">
+                The information on this page is not a public offer
+            </div>
+        </footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>
+</body>
+</html>
